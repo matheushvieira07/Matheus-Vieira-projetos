@@ -71,13 +71,15 @@
             border: 1px solid #ccc;
             border-radius: 2px;
             background-color: black;
+            color: white;
         }
         input[type="text"],input[type="email"],input[type="password"]{
-            width: 80%;
+            width: 95%;
             padding: 10px;
             margin: 10px 0;
             border: 1px solid #ccc;
             border-radius: 5px;
+            
         }
         button{
             width: 100%;
@@ -91,7 +93,9 @@
         button:hover{
             background-color: #e74c3c;
         }
-
+        .text-aligncenter{
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -139,7 +143,9 @@
         </table>
     </div>
 
+    <div class="text-aligncenter">
     <h2>Formulário de Cadastro</h2>
+    </div>
     <form action="/submit" method="POST">
         <label for="nome">Nome</label>
         <input type="text" id="nome" name="nome" required>
@@ -152,6 +158,6 @@
 
         <button type="submit">Cadastrar</button>
      </form>
-    
+
 </body>
 </html>
